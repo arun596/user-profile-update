@@ -85,7 +85,7 @@ const handleFileChange = (e) => {
 
   const handleSubmit = async () => {
     try {
-      const res = await fetch('http://localhost:5000/api/user/profile', {
+      const res = await fetch('https://user-profile-backend-mwbd.onrender.com', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(formData),
